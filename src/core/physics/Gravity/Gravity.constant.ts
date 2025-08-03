@@ -1,0 +1,1 @@
+export const GRAVITY_ACCELERATION = 980;

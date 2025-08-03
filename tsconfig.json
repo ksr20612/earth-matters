@@ -9,25 +9,15 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",
-    "jsxImportSource": "@emotion/react",
     "baseUrl": ".",
     "paths": {
-      "@components": ["./components"],
-      "@components/*": ["./components/*"],
-      "@resources": ["./resources"],
-      "@resources/*": ["./resources/*"],
-      "@core": ["./core"],
-      "@core/*": ["./core/*"],
-      "@hooks": ["./hooks"],
-      "@hooks/*": ["./hooks/*"],
-      "@themes": ["./themes"],
-      "@themes/*": ["./themes/*"],
-      "@typings": ["./typings"],
-      "@typings/*": ["./typings/*"],
-      "@utils": ["./utils"],
-      "@utils/*": ["./utils/*"]
-    }
+      "@core": ["./src/core"],
+      "@core/*": ["./src/core/*"],
+      "@react": ["./src/react"],
+      "@react/*": ["./src/react/*"]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react"
   },
   "include": ["**/*.ts", "**/*.tsx", "**/*.d.ts", "vite.config.mts"],
   "exclude": [
