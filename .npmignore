@@ -1,0 +1,40 @@
+# Source files
+src/
+.github/
+.vscode/
+
+# Development files
+*.config.*
+.eslintrc.*
+.prettierrc.*
+.prettierignore
+.eslintignore
+
+# Build tools
+vite.config.mts
+tsconfig*.json
+
+# Dependencies
+node_modules/
+pnpm-lock.yaml
+
+# Development dependencies
+.husky/
+lint-staged.config.*
+
+# Test files
+*.test.*
+*.spec.*
+vitest.setup.ts
+
+# Documentation
+README.md
+LICENSE
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db 

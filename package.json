@@ -1,7 +1,7 @@
 {
   "name": "earth-matters",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.0",
   "description": "A lightweight 3D physics core inspired by how Earth works.",
   "type": "module",
   "keywords": [
@@ -53,6 +53,9 @@
   "peerDependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "lint-staged": {
     "*.{js,ts,mts,tsx,json,mdx}": "prettier --write",
