@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "description": "A lightweight 3D physics core inspired by how Earth works.",
   "type": "module",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "keywords": [
     "react",
     "physics",
@@ -49,6 +52,24 @@
     "vite": "^5.4.19",
     "vite-plugin-dts": "^3.9.1",
     "vitest": "^1.6.1"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./physics": {
+      "import": "./dist/physics.mjs",
+      "types": "./dist/physics.d.ts"
+    },
+    "./react": {
+      "import": "./dist/react.mjs",
+      "types": "./dist/react.d.ts"
+    },
+    "./vector": {
+      "import": "./dist/vector.mjs",
+      "types": "./dist/vector.d.ts"
+    }
   },
   "peerDependencies": {
     "react": "^19.1.0",
