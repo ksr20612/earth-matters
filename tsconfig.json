@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+    "baseUrl": ".",
+    "paths": {
+      "@components": ["./components"],
+      "@components/*": ["./components/*"],
+      "@resources": ["./resources"],
+      "@resources/*": ["./resources/*"],
+      "@core": ["./core"],
+      "@core/*": ["./core/*"],
+      "@hooks": ["./hooks"],
+      "@hooks/*": ["./hooks/*"],
+      "@themes": ["./themes"],
+      "@themes/*": ["./themes/*"],
+      "@typings": ["./typings"],
+      "@typings/*": ["./typings/*"],
+      "@utils": ["./utils"],
+      "@utils/*": ["./utils/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.d.ts", "vite.config.mts"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.stories.tsx",
+    "**/*.styles.tsx",
+    "**/*.styles.ts",
+    "**/*.test.tsx",
+    "vitest.setup.ts"
+  ],
+  "types": ["vitest/globals"]
+}
